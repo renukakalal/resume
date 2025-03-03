@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Steller landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Steller Landing page | Free Bootstrap 4.1 landing page</title>
+    <link rel="stylesheet" href="styles.css">
+    <div class="socials-container"></div>
+
+    <style>
+        /* styles.css */
+        .about-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Making the profile image round */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #2d3748;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #4a5568;
+    font-size: 1.5rem;
+}
+
+.about-text {
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.download-button {
+    display: inline-block;
+    background: #67E8F9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.download-button:hover {
+    background: #0397b2;
+    transform: scale(1.05);
+}
+
+.social-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-item i {
+    font-size: 24px;
+    color: #4a5568;
+    transition: color 0.3s ease;
+}
+
+<!------------------------------------------------------------------------------------------------------------------------>
+   
+
+      
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .box-container {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .paa-section {
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+
+        .toggle-button {
+            background-color: #FAD0D9;
+            border: 2px solid  #FAD0D9d4;
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            color: black;
+        }
+
+        .toggle-button:hover {
+            background-color: #67E8F9;
+            color: white;
+        }
+
+        .toggle-button::after {
+            content: '►';
+            float: right;
+            transform: rotate(0deg);
+            transition: transform 0.3s ease;
+            color: black;
+        }
+
+        .toggle-button.active::after {
+            transform: rotate(90deg);
+        }
+
+        .paa-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid#f97316;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            background-color: white;
+        }
+
+        .paa-content ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .paa-content li {
+            color:black;
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .paa-content li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color:black;
+        }
+<!---------------------------------------------------------------->
+        .title {
+            color: #000;
+            margin-bottom: 30px;
+        }
+
+
+        .socials-container {
+            margin: 30px 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+       
+        .socials-container {
+            margin: 30px 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .socials {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: white;
+            border: 2px solid #67E8F9;
+            color: #67E8F9;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-item:hover {
+            transform: translateY(-5px);
+            background-color: #67E8F9;
+            color: white;
+            box-shadow: 0 5px 15px #67E8F9(6, 182, 212, 0.3);
+        }
+
+        .social-item i {
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .social-item:hover i {
+            animation: bounce 0.5s ease;
+        }
+
+        /* Ripple effect */
+        .social-item::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: scale(0);
+            transition: transform 0.3s ease;
+        }
+
+        .social-item:active::after {
+            transform: scale(2);
+            opacity: 0;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        /* Responsive design */
+        @media (max-width: 576px) {
+            .socials-container {
+                justify-content: center;
+            }
+            
+            .social-item {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .social-item i {
+                font-size: 18px;
+            }
+        }
+
+
+<!------------------------------------------------------------------------------->
+
+
+.social-item:hover {
+    color:  #F472B6;
+    transform: translateY(-2px);
+}
+.navbar {
+    background: #F472B6;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: #F472B6;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-brand img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border-color:  #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(74, 0, 224, 0.95);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+    }
+}
+.skills-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.title {
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #67E8F9;
+}
+
+.skill-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.skill-card h5 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+    .section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column; /* Forces items into a vertical layout */
+    align-items: center; /* Centers items */
+    width: 100%;
+    gap: 20px; /* Adds spacing between items */
+}
+
+    
+            .education-title {
+    display: block; /* Ensures it appears on a new line */
+    font-size: 1.5rem;
+    margin-bottom: 1rem; /* Add space below the title */
+    color: #333;
+    font-weight: bold;
+}
+           .education-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: #F8BBD0; /* Light pink background */
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto; /* Adds space around each item */
+    display: flex;
+    flex-direction: column;
+}
+    
+            .education-item:hover,
+            .education-item:active,
+            .education-item:focus {
+                background-color: #67E8F9 !important; /* Change to sky blue on touch */
+            }
+    
+           
+                .education-item {
+                    width: calc(50% - 20px); /* Increased width for larger screens */
+                }
+    
+                .section-title {
+                    font-size: 2.5em;
+                }
+            
+    
+            @media (max-width: 768px) {
+                .education-item {
+                    width: 100%;
+                }
+            }
+    
+            /* Hover and Touch effects */
+            .education-item {
+                transition: transform 0.3s ease;
+            }
+    
+            .education-item:hover {
+                transform: translateY(-5px);
+            }
+            body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .section {
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .projects-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-image-wrapper {
+    width: 100%;  /* Adjust the width of the container */
+    height: 100px; /* Increase height to make the box bigger */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the image doesn't overflow */
+    border-radius: 8px;
+}
+
+.project-image-wrapper img {
+    width: 60%;  /* Adjust width of image */
+    height: 100%; /* Makes image fill the container */
+    object-fit: cover; /* Ensures the image fits nicely inside */
+}
+
+        .project-title {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .project-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .project-link {
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+
+        .github {
+            background-color: #24292e;
+            color: white;
+        }
+
+        .demo {
+            background-color: #f472b6;
+            color: white;
+        }
+
+        .project-link:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .contact-section {
+    padding: 4rem 0;
+    background: #eef2f3;
+    text-align: center;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 400px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background: #06b6d4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #0397b2;
+    transform: scale(1.05);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    color: #2d3748;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: #06b6d4;
+}
+
+.social-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-item {
+    font-size: 1.5rem;
+    color: #06b6d4;
+    transition: 0.3s;
+}
+
+.social-item:hover {
+    color: #0397b2;
+    transform: scale(1.2);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-section {
+    padding: 50px 0;
+}
+
+.contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Steller main styles -->
+    <link rel="stylesheet" href="assets/css/steller.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/imgs/logo.svg" alt="">RENUKA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <!----<li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                  </li>---->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#technicalsummary">Technical summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.querySelector('.navbar');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Scroll effect
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            
+            // Smooth scroll
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                    
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarCollapse.classList.remove('show');
+                    }
+                });
+            });
+        });
+        </script>
+    
+<section class="about-section">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 300px 1fr; gap: 2rem; align-items: center;">
+            <div>
+                <img src="assets/imgs/profilePhtoimage" alt="Profile" class="profile-img">
+            </div>
+            
+            <div>
+                <h2 class="section-title">About Me</h2>
+                <h3 class="subtitle">I'm Renuka</h3>
+                <div id="typing-text" class="typing-text"></div>
+                
+                <div class="about-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, pariatur, aperiam aut autem voluptas odit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, eius, nam.</p>
+                </div>
+                
+                <a href="assets/imgs/renukafinalresume.pdf" class="download-button">Download Resume</a>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/renukakalal8088/" class="social-item" target="_blank">
+                        <i class="ti-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/renukakalal" class="social-item" target="_blank">
+                        <i class="ti-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const text = "Full Stack Developer";
+    let index = 0;
+    
+    function typeEffect() {
+        if (index < text.length) {
+            document.getElementById("typing-text").innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeEffect, 100);
+        }
+    }
+    typeEffect();
+});
+</script>
+
+    <!-- Service section -->
+    <section id="skills" class="skills-section">
+        <div class="container text-center">
+            <h2 class="title">SKILLS</h2>
+            <p class="mb-5 pb-4">Here are the technologies and tools I work with:</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="assets/imgs/javalogo.png" alt="Java">
+                    <h5>Java</h5>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/imgs/intellij.jpeg" alt="IntelliJ">
+                    <h5>IntelliJ</h5>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/imgs/spring-mvc.png" alt="Spring">
+                    <h5>Spring</h5>
+                </div>
+                <div class="skill-card">
+                    <img src="https://th.bing.com/th/id/OIP.cK3YjSutwWZidAzq705FawHaEF?rs=1&pid=ImgDetMain" alt="JPA">
+                    <h5>JPA</h5>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/imgs/maven.png" alt="Maven">
+                    <h5>Maven</h5>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/imgs/htmllogo.png" alt="HTML">
+                    <h5>HTML</h5>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/imgs/csslogo.jpg" alt="CSS">
+                    <h5>CSS</h5>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/imgs/javascriptlogo.jpg" alt="JavaScript">
+                    <h5>JavaScript</h5>
+                </div>
+                <div class="skill-card">
+                    <img src="steller/public_html/assets/imgs/tomcat_server" alt="Tomcat Server">
+                    <h5>Tomcat Server</h5>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/imgs/lombok.png" alt="Lombok">
+                    <h5>Lombok</h5>
+                </div>
+                <div class="skill-card">
+                    <img src="steller/public_html/assets/imgs/ecllipse.png" alt="Eclipse">
+                    <h5>Eclipse</h5>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/imgs/vscode.jpg" alt="VS Code">
+                    <h5>VS Code</h5>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/imgs/github.png" alt="GitHub">
+                    <h5>GitHub</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.custom-card');
+            
+            // Add animation on scroll
+            function checkScroll() {
+                cards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    const triggerBottom = window.innerHeight * 0.8;
+                    
+                    if (cardTop < triggerBottom) {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+        
+            // Initial styles
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'all 0.5s ease';
+            });
+        
+            window.addEventListener('scroll', checkScroll);
+            checkScroll(); // Check on load
+        });
+        </script>
+
+    <!-- End of Sectoin -->
+
+
+
+    
+
+    <!-- Skills section -->
+    <div id="technicalsummary" class="container text-center">
+        <h3 class="title" style="font-size: 30px;" >TECHNICAL SUMMARY</h3>
+        
+        <div class="box-container">
+            <!-- Java Section -->
+            <div class="paa-section">
+                <button class="toggle-button" onclick="toggleVisibility('javaContainer')">Java</button>
+                <div id="javaContainer" class="paa-content">
+                    <ul>
+                        <li>Proficient in OOP Principles: Skilled in implementing Encapsulation, Inheritance, Polymorphism, and Abstraction.</li>
+                        <li>Memory Diagram: Understanding of Stack Memory and Instance Memory in Java.</li>
+                        <li>Collections Framework: Expertise in using data structures like Lists, Sets, Maps, and Queues, with a focus on performance and best practices.</li>
+                        <li>Exception Handling: Skilled in writing robust and fault-tolerant applications using throw, throws, try-catch blocks, and custom exceptions.</li>
+                        <li>Object Class: Proficient in overriding and utilizing methods like equals(), toString(), and hashCode().</li>
+                        <li>DTOs: Experience in implementing Data Transfer Objects (DTOs) for data encapsulation and transfer.</li>
+                        <li>Array and String Manipulations: Strong knowledge of working with arrays and strings for efficient data handling.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Other sections remain the same -->
+            <!-- Add the same structure for SQL, JDBC/JPA, Spring-MVC, and Web-Technologies sections -->
+       
+
+            <!-- SQL Section -->
+            <div class="paa-section">
+                <button class="toggle-button" onclick="toggleVisibility('sqlContainer')">SQL</button>
+                <div id="sqlContainer" class="paa-content">
+                    <ul>
+                        <li>Skilled in writing complex SQL queries, including WHERE, SELECT, JOIN, GROUP BY, HAVING, and subqueries for data retrieval and analysis.</li>
+                        <li>Proficient in SQL statements, including DDL for schema design, DQL for advanced data retrieval, DML for data handling, DCL for managing permissions, and TCL for ensuring data integrity and transactional consistency.</li>
+                        <li>Experienced in implementing CRUD operations (Create, Read, Update, Delete) for efficient data handling.</li>
+                        <li>Proficient in designing and managing Database Management Systems (DBMS) for structured data storage and retrieval.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- JDBC, JPA Section -->
+            <div class="paa-section">
+                <button class="toggle-button" onclick="toggleVisibility('jdbcJpaContainer')">JDBC, JPA</button>
+                <div id="jdbcJpaContainer" class="paa-content">
+                    <ul>
+                        <li>Proficient in using JDBC for connecting Java applications to relational databases, executing SQL queries, and handling result sets.</li>
+                        <li>Experienced in performing CRUD operations using JDBC with proper transaction management and connection pooling techniques.</li>
+                        <li>Expertise in using PreparedStatement and CallableStatement for efficient and secure database interactions.</li>
+                        <li>Skilled in integrating JPA with Spring Data JPA for easier database access, repository patterns, and automatic implementation of queries.</li>
+                        <li>Implemented transactions, and fetching to improve performance in Hibernate-based applications.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Spring-MVC Section -->
+            <div class="paa-section">
+                <button class="toggle-button" onclick="toggleVisibility('springMvcContainer')">SPRING-MVC</button>
+                <div id="springMvcContainer" class="paa-content">
+                    <ul>
+                        <li>Experienced in configuring and using Spring DispatcherServlet to manage request routing and response handling.</li>
+                        <li>Skilled in defining controllers with @Controller and @RestController annotations to handle HTTP requests and implement business logic.</li>
+                        <li>Proficient in implementing RESTful web services in Spring MVC using @RequestMapping, @GetMapping, @PostMapping, and other HTTP mapping annotations.</li>
+                        <li>Hands-on experience with Spring Data JPA and Spring JDBC for database interaction in Spring MVC applications.</li>
+                    </ul>
+                </div>
+            </div>
+    
+
+                <!-- Web-Technologies Section -->
+                <div class="paa-section">
+                    <button class="toggle-button"
+                        onclick="toggleVisibility('webTechContainer')">WEB-TECHNOLOGIES</button>
+                    <div id="webTechContainer" class="paa-content">
+                        <ul>
+                            <li>Proficient in creating semantic, well-structured web pages using HTML5 with proper use
+                                of tags, attributes, and forms.</li>
+                            <li>Expertise in creating forms, handling user input, and integrating validation techniques
+                                using HTML elements.</li>
+                            <li>Proficient in styling web pages using CSS3, including advanced features such as flexbox,
+                                grid layout, and media queries for responsive design.</li>
+                            <li>Familiar with CSS frameworks like Bootstrap to speed up development and improve UI
+                                consistency.</li>
+                            <li>Proficient in writing clean, efficient JavaScript for dynamic, interactive web pages and
+                                web applications.</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+
+                <script>
+                    function toggleVisibility(containerId) {
+                        const container = document.getElementById(containerId);
+                        const button = container.previousElementSibling;
+                        
+                        // Toggle the active class on the button
+                        button.classList.toggle('active');
+                        
+                        // Toggle the content visibility
+                        if (container.style.display === "none" || !container.style.display) {
+                            container.style.display = "block";
+                        } else {
+                            container.style.display = "none";
+                        }
+                    }
+                    </script>
+
+
+
+
+    </section>
+
+
+    <!----techinical summary ends start-->
+
+ 
+        <section id="education" class="section">
+            <div class="container">
+                <div class="education-container">
+                    <br>
+                    <h6 class="section-title">Education</h6>
+                    
+                    <div class="education-item">
+                 
+                     
+                        <h3 class="education-title">M.Sc. in Computer Science</h3>
+                        <p class="education-details">University of XYZ, 2020 - 2022</p>
+                        <p class="education-subdetails">Graduated with honors, GPA: 3.9/4.0</p>
+                    </div>
+                    <div class="education-item">
+                        <h3 class="education-title">B.Tech in Information Technology</h3>
+                        <p class="education-details">Institute of ABC, 2016 - 2020</p>
+                        <p class="education-subdetails">Specialized in software engineering and web development.</p>
+                    </div>
+                    <div class="education-item">
+                        <h3 class="education-title">Diploma in Web Design</h3>
+                        <p class="education-details">College of DEF, 2014 - 2016</p>
+                        <p class="education-subdetails">Focused on front-end and user experience design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const educationItems = document.querySelectorAll('.education-item');
+    
+                educationItems.forEach(item => {
+                    item.addEventListener('touchstart', function(e) {
+                        e.preventDefault();
+                        this.classList.add('sky-blue');
+                    });
+                });
+            });
+        </script>
+  
+  <section class="section">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">I completed these projects during my training period.</p>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-image-wrapper">
+                <img src="assets/imgs/projectimage.jpg" alt="Course Registration System">
+            </div>
+            <h3 class="project-title"></h3>
+            <div class="project-links">
+                <a href="https://github.com/renukakalal/Spring_MVC/tree/main/renuka_gym" class="project-link github" target="_blank">
+                    GitHub
+                </a>
+                <a href="#" class="project-link demo" target="_blank">
+                    Live Demo
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image-wrapper">
+                <img src="steller/public_html/assets/imgs/projectimage.jpg" alt="Admin Management Portal">
+            </div>
+            <h3 class="project-title"></h3>
+            <div class="project-links">
+                <a href="https://github.com/renukakalal/JPA-Hibernet-/tree/main/xworkz_admin_details" class="project-link github" target="_blank">
+                    GitHub
+                </a>
+                <a href="#" class="project-link demo" target="_blank">
+                    Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+ 
+      
+        
+        <!--<div class="container text-center">
+            <h6 class="subtitle">Testmonial</h6>
+            <h6 class="section-title mb-4">What People Say About Me</h6>
+            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br>
+                rerum commodi corrupti, temporibus non quam.</p>
+
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card testmonial-card border">
+                            <div class="card-body">
+                                <img src="assets/imgs/avatar-1.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates
+                                    in enim vel amet?</p>
+                                <h1 class="title">Emma Re</h1>
+                                <h1 class="subtitle">Graphic Designer</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card testmonial-card border">
+                            <div class="card-body">
+                                <img src="assets/imgs/avatar-2.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates
+                                    in enim vel amet?</p>
+                                <h1 class="title">James Bert</h1>
+                                <h1 class="subtitle">Web Designer</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card testmonial-card border">
+                            <div class="card-body">
+                                <img src="assets/imgs/avatar-3.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates
+                                    in enim vel amet?</p>
+                                <h1 class="title">Michael Abra</h1>
+                                <h1 class="subtitle">Web Developer</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of testmonial section -->
+
+     
+                       
+
+    <!-- Hire me section -->
+    <!--<section class="bg-gray p-0 section">
+        <div class="container">
+            <div class="card bg-primary">
+                <div class="card-body text-light">
+                    <div class="row align-items-center">
+                        <div class="col-sm-9 text-center text-sm-left">
+                            <h5 class="mt-3">Hire Me For Your Project</h5>
+                            <p class="mb-3">Accusantium labore nostrum similique quisquam.</p>
+                        </div>
+                        <div class="col-sm-3 text-center text-sm-right">
+                            <button class="btn btn-light rounded">Hire Me!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End od Hire me section. -->
+
+    <!-- Contact Section -->
+    
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h6>Get In Touch</h6>
+            <h2>Contact</h2>
+            <p>Let's connect and discuss how we can work together.</p>
+
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h6>Available 24/7</h6>
+                    <h4>Send a Message</h4>
+                    <form id="contactForm">
+                        <input type="email" id="email" placeholder="Enter email" required>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <textarea id="message" rows="5" placeholder="Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <p><span>📍</span> Bangalore, India</p>
+                    <p><span>📞</span> +918088470191</p>
+                    <p><span>✉️</span> renukakalal00@gmail.com</p>
+                </div>
+            </div>
+            <script>
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                
+                let email = document.getElementById("email").value;
+                let name = document.getElementById("name").value;
+                let message = document.getElementById("message").value;
+            
+                if (email === "" || name === "" || message === "") {
+                    alert("Please fill out all fields.");
+                    return;
+                }
+            
+                alert("Message sent successfully!");
+                document.getElementById("contactForm").reset();
+            });
+            </script>
+            
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/renukakalal8088/" target="_blank">🔗 LinkedIn</a>
+                <a href="https://github.com/renukakalal" target="_blank">🐙 GitHub</a>
+                <a href="https://www.instagram.com/" target="_blank">📸 Instagram</a>
+                <a href="https://www.facebook.com/" target="_blank">📘 Facebook</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <!-- core  -->
+   
+
+</body>
+
+</html>
